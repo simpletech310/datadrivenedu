@@ -13,9 +13,9 @@ import {
   Repeat,
   ShieldCheck,
   Sparkles,
-  Users,
-  type LucideIcon
+  Users
 } from 'lucide-react';
+import type { LucideIcon } from 'lucide-react';
 import { Hero } from '@/components/Hero';
 import { ServiceCard } from '@/components/ServiceCard';
 import { CTA } from '@/components/CTA';
