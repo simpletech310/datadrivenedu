@@ -87,7 +87,8 @@ export default function HomePage() {
                 'Caregiver coaching that helps skills carry into daily life.'
               ].map((item) => (
                 <li key={item} className="flex gap-3">
-                  <CheckCircle2 className="mt-1 text-success" size={20} /> <span>{item}</span>
+                  <CheckCircle2 className="mt-1 text-success" size={20} />
+                  <span>{item}</span>
                 </li>
               ))}
             </ul>
@@ -108,7 +109,10 @@ export default function HomePage() {
             ))}
           </div>
           <div className="mt-8 text-center">
-            <a href="mailto:hello@datadrivenedu.com" className="focus-ring rounded-xl bg-primary px-6 py-3 font-semibold text-white hover:bg-slate">
+            <a
+              href="mailto:hello@datadrivenedu.com"
+              className="focus-ring rounded-xl bg-primary px-6 py-3 font-semibold text-white hover:bg-slate"
+            >
               Start Today
             </a>
           </div>
@@ -147,7 +151,10 @@ export default function HomePage() {
               Our team collects session data, defines mastery criteria, and adjusts plans based on what your child is showing us in real time.
               You receive plain-language updates that connect data to everyday wins.
             </p>
-            <a href="/how-it-works" className="focus-ring mt-6 inline-block rounded-xl bg-primary px-6 py-3 font-semibold text-white hover:bg-slate">
+            <a
+              href="/how-it-works"
+              className="focus-ring mt-6 inline-block rounded-xl bg-primary px-6 py-3 font-semibold text-white hover:bg-slate"
+            >
               Learn About Our Approach
             </a>
           </div>
