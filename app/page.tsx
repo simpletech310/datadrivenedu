@@ -1,52 +1,16 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
-import {
-  BarChart3,
-  BrainCircuit,
-  CheckCircle2,
-  ClipboardCheck,
-  HandHeart,
-  HeartHandshake,
-  Home,
-  LineChart,
-  MessagesSquare,
-  Repeat,
-  ShieldCheck,
-  Sparkles,
-  Users,
-  type LucideIcon
-} from 'lucide-react';
+import { CheckCircle2 } from 'lucide-react';
+
 import { Hero } from '@/components/Hero';
 import { ServiceCard } from '@/components/ServiceCard';
 import { CTA } from '@/components/CTA';
+import { trustCards, processSteps, values } from '@/lib/homeContent';
 
 export const metadata: Metadata = {
   title: 'Compassionate, Data-Driven ABA Therapy | Data Driven Education',
   description: 'Warm, evidence-based ABA therapy with clear progress tracking for Riverside and Desert Hot Springs families.'
 };
-
-const trustCards: { icon: LucideIcon; title: string }[] = [
-  { icon: ShieldCheck, title: 'BCBA-Supervised Care' },
-  { icon: ClipboardCheck, title: 'Individualized Plans' },
-  { icon: LineChart, title: 'Progress You Can See' },
-  { icon: HandHeart, title: 'Caregiver Partnership' }
-];
-
-const processSteps: { title: string; description: string; icon: LucideIcon }[] = [
-  { title: 'Contact Us', description: 'Share your goals, concerns, and schedule needs.', icon: Users },
-  { title: 'Assessment', description: 'A BCBA evaluates strengths and priority skills.', icon: BrainCircuit },
-  { title: 'Therapy Begins', description: 'Consistent sessions begin with supportive coaching.', icon: Home },
-  { title: 'Progress Reviews', description: 'We review data together and refine the plan.', icon: BarChart3 }
-];
-
-const values: { title: string; icon: LucideIcon }[] = [
-  { title: 'Compassion & Dignity', icon: HeartHandshake },
-  { title: 'Evidence-Based Methods', icon: ClipboardCheck },
-  { title: 'Clear Communication', icon: MessagesSquare },
-  { title: 'Collaborative Care', icon: Users },
-  { title: 'Consistency', icon: Repeat },
-  { title: 'Real-World Skills', icon: Sparkles }
-];
 
 export default function HomePage() {
   return (
