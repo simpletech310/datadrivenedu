@@ -173,7 +173,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <CTA title="Ready to Get Started?" description="We respond within 1 business day. Let’s talk about your child’s goals." />
+      <CTA title="Ready to Get Started?" description="We respond within 1 business day. Let's talk about your child's goals." />
     </>
   );
 }
